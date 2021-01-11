@@ -63,6 +63,7 @@ class UserList < User
     selected_user.empty? ? true : false
   end
 
+  #find a user and update only if the update flag is true
   def find_and_update(update=false)
     @all_users.each do |user|
       if user.email == @email.strip

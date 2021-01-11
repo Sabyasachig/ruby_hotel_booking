@@ -30,20 +30,20 @@ class Hotel
 
   def check_options(input_val)
     case input_val
-    when 1
-      @hotel_room.display_rooms
-    when 2
-      @hotel_room.check_in_out(false)
-    when 3
-      @hotel_room.check_in_out(true)
-    when 4
-      @hotel_guest.add_user
-    when 5
-      @hotel_guest.find_user
-    when 6
-      @hotel_guest.update_user
-    else
-      puts "Please Retry again"
+      when 1
+        @hotel_room.display_rooms
+      when 2
+        @hotel_room.check_in_out(false)
+      when 3
+        @hotel_room.check_in_out(true)
+      when 4
+        @hotel_guest.add_user
+      when 5
+        @hotel_guest.find_user
+      when 6
+        @hotel_guest.update_user
+      else
+        puts "Please Retry again"
     end
   end
 end

@@ -40,6 +40,8 @@ class Room
     end
   end
 
+  #book a room based on type and number ,Ex: Normal Room, 5
+  #Validate the room type and availability before confirmation
   def book_room(type, number)
     select_room_flag = false
     @rooms.each_with_index do |room, i|
@@ -56,6 +58,8 @@ class Room
     puts "Sorry Please enter the correct room type" if select_room_flag === false
   end
 
+  #release a room based on type and number ,Ex: Normal Room, 2
+  #Validate the room type and number before release
   def release_room(type, number)
     select_room_flag = false
     @rooms.each_with_index do |room, i|
